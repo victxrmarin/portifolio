@@ -1,0 +1,11 @@
+#scrollProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 0%;
+  background-color: #00f7ff;
+  z-index: 9999;
+  transition: height 0.1s ease-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}/*# sourceMappingURL=scrollbar.css.map */

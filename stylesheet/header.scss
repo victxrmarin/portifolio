@@ -1,0 +1,106 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#container {
+  text-align: center;
+
+  #headerTitle {
+    text-align: center;
+    font-size: 68px;
+
+    span {
+      font-size: 76px;
+      transition: 0.1s ease;
+    }
+
+    span:hover {
+        color: rgb(0, 216, 216);
+      text-shadow: 1px 1px 2px rgba(0, 190, 224, 0.521), 0 0 1em rgba(0, 255, 255, 0.5), 0 0 0.2em rgba(0, 255, 255, 0.5);
+    }
+  }
+
+  #headerSubtitle {
+    font-weight: 100;
+    font-size: 22px;
+  }
+
+  #headerButton {
+    background-color: #00f7ff;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 0 6px rgba(0, 247, 255, 0.8);
+    transition: 0.1 ease-in-out;
+  }
+
+  #headerButton:hover {
+    box-shadow: 0 0 24px rgba(0, 247, 255, 0.8);
+    transition: 0.1s ease-in-out
+  }
+}
+
+#icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 25px;
+
+  img {
+    transition: 0.2s ease;
+  }
+
+  img:hover {
+    width: 62px;
+    height: 62px;
+    transition: 0.1s ease;
+  }
+}
+
+#snowCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+main, footer {
+    background-color: black;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; 
+  height: 0;            
+  border-left: 10px solid transparent;  
+  border-right: 10px solid transparent; 
+  border-top: 15px solid #00f7ff;      
+  animation: bounceDown 1.5s infinite;
+  z-index: 10000;
+   filter: drop-shadow(0 0 6px rgba(0, 247, 255, 0.8));
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
