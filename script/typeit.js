@@ -1,5 +1,5 @@
 new TypeIt("#typeEffectHeader", {
-  speed: 75,
+  speed: 100,
   waitUntilVisible: true,
   loop: true
 })

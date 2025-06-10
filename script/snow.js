@@ -40,7 +40,7 @@ window.onload = function() {
     draw() {
       ctx.beginPath();
       ctx.fillStyle = 'white';
-      ctx.shadowColor = 'rgba(255,255,255,0.8)';
+      ctx.shadowColor = 'rgba(255,255,255,0.5)';
       ctx.shadowBlur = 5;
       ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
       ctx.fill();
