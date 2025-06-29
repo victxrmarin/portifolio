@@ -18,3 +18,16 @@ html {
   -ms-overflow-style: none; /* IE 10+ */
   overflow-y: scroll; /* força scroll sem mostrar a barra */
 }/*# sourceMappingURL=default.css.map */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+  pointer-events: none;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

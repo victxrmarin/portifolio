@@ -1,0 +1,89 @@
+.timeline-container {
+  margin: auto;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.timeline-container h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 10px rgb(40, 255, 255);
+}
+
+.timeline {
+  position: relative;
+}
+
+/* Linha central */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #00eaff;
+  transform: translateX(-50%);
+}
+
+/* Bloco individual */
+.timeline-entry {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Alternar lados com :nth-child */
+.timeline-entry:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-entry:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Ponto */
+.timeline-entry::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #00eaff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  border: 1px solid #00eaff;
+  box-shadow: 0 0 10px rgba(0, 232, 255, 0.2);
+}
+
+.timeline-content p {
+    color:#808080
+}
+
+.description {
+    color: white !important;
+}
+
+.timeline-entry:nth-child(odd) .timeline-content {
+  margin-left: 40px;
+  text-align: left;
+}
+
+.timeline-entry:nth-child(even) .timeline-content {
+  margin-right: 40px;
+  text-align: left;
+}

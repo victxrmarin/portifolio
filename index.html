@@ -9,13 +9,18 @@
   <script src="./script/typeit.js" defer></script>
   <script src="./script/snow.js" defer></script>
   <script src="./script/scrollbar.js" defer></script>
+  <script src="./script/scroll-reveal.js" defer></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="./stylesheet/default.css" />
   <link rel="stylesheet" href="./stylesheet/header.css" />
   <link rel="stylesheet" href="./stylesheet/scrollbar.css">
   <link rel="stylesheet" href="./stylesheet/main.css">
+  <link rel="stylesheet" href="./stylesheet/timeline.css">
+  <link rel="stylesheet" href="./stylesheet/skills.css">
+  <link rel="stylesheet" href="/stylesheet/footer.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
@@ -37,7 +42,7 @@
   <main>
     <section id="aboutMe">
         <div id="aboutMeImg">
-            <img src="https://s1.sportstatics.com/relevo/www/multimedia/202407/05/media/cortadas/vitinha-RuEZDTTwCYAdoMQFjyHrBsL-1200x648@Relevo.jpg" alt="Me">
+            <img src="./image/me.jpg" alt="Me">
         </div>
         <div id="aboutMeText">
             <h1>I'm <span>Victor Marin</span>, an aspiring developer dedicated to making my mark in the job market.</h1>
@@ -46,11 +51,102 @@
             <button class="btn"><i class="fa fa-download"></i> Download</button>
         </div>
     </section>
-  </main>
-  <footer>
-    
-    <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/victxrmarin/portifolio" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star victxrmarin/portifolio on GitHub">Star on Repo</a>
-  </footer>
+<section id="timeline">
+  <div class="timeline-container">
+    <h1>My Journey</h1>
+    <div class="timeline">
+
+      <div class="timeline-entry reveal">
+        <div class="timeline-content">
+          <h3>System Devolpment Bilingual</h3>
+          <p>SENAC (Fev 2023 - Out 2024)</p>
+          <p class="description">
+            Studied Object-Oriented Programming, Agile methodologies, RESTful APIs, unit tests, data manipulation and UX/UI principles.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry reveal">
+        <div class="timeline-content">
+          <h3>Fulltime at @SKA Engineering Automation</h3>
+          <p>Dec 2024 - Now</p>
+          <p class="description">
+            Working with Database Analysis and bringing solutions to our customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-entry reveal">
+        <div class="timeline-content">
+          <h3>BTECH - Systems Analysis and Development</h3>
+          <p>Unisinos (August 2025 - Now)</p>
+          <p class="description">
+            Graduating in System Analysis and Development, with solid knowledge in software engineering, databases and modern development practices.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section id="skills">
+  <table class="skills-table reveal">
+    <tr>
+      <th>FRONTEND</th>
+      <th>BACKEND</th>
+      <th>DATABASE</th>
+      <th>TOOLS</th>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/javascript--v1.png" alt="">Javascript</td>
+      <td><img src="https://img.icons8.com/color/48/nodejs.png" alt="">Node.js</td>
+      <td><img src="https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000" alt="">SQL Server</td>
+      <td><img src="https://img.icons8.com/color/48/git.png" alt="">Git</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/css3.png" alt="">CSS</td>
+      <td><img src="https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000" alt="">Typescript</td>
+      <td><img src="https://img.icons8.com/?size=100&id=DakakaPez2uy&format=png&color=000000" alt="">MariaDB</td>
+      <td><img src="https://img.icons8.com/color/48/docker.png" alt="">Docker</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="">HTML</td>
+      <td><img src="https://img.icons8.com/?size=100&id=2ZOaTclOqD4q&format=png&color=000000" alt="">Express.js</td>
+      <td><img src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000" alt="">PostgreSQL</td>
+      <td><img src="https://img.icons8.com/?size=100&id=bVGqATNwfhYq&format=png&color=000000" alt="">GitHub</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/plasticine/48/react.png" alt="">React</td>
+      <td><img src="https://img.icons8.com/?size=100&id=55251&format=png&color=000000" alt="">C#</td>
+      <td></td>
+      <td><img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="">AWS</td>
+    </tr>
+    <tr>
+      <td><img src="https://img.icons8.com/color/48/sass.png" alt="">Sass</td>
+      <td><img src="https://img.icons8.com/?size=100&id=8e6sgfGHgI9t&format=png&color=000000" alt="">Nodemon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</section>
 </body>
+</main>
+<footer>
+  <p>Let's connect and build something amazing!</p>
+  <h1>victormarin.dev@gmail.com</h1>
+  <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/victxrmarin/portifolio" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star victxrmarin/portifolio on GitHub">Star</a>
+</footer>
 </html>

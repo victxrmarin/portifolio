@@ -1,11 +1,14 @@
 main {
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100vw;
-  height: 90vh;
+  height: fit-content;
+  background: #0A0A0A;
+  background: linear-gradient(360deg, rgb(2, 2, 2) 0%, rgb(0, 0, 0) 100%);
 }
 main section {
   width: 65vw;
@@ -31,17 +34,18 @@ main section #aboutMeText {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Darker background on mouse-over */
 }
 main section #aboutMeText h1 {
+  margin-top: 16px;
   font-size: 42px;
 }
 main section #aboutMeText h1 span {
   color: aqua;
+  text-shadow: 1px 1px 10px aqua;
 }
 main section #aboutMeText p {
   width: 70%;
-  font-weight: 100;
+  font-weight: 200;
   margin: 16px;
 }
 main section #aboutMeText .btn {
@@ -51,7 +55,7 @@ main section #aboutMeText .btn {
   padding: 12px 14px;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   box-shadow: 0 0 4px rgba(0, 247, 255, 0.8);
   transition: 0.2s ease;
 }

@@ -19,3 +19,14 @@ html {
   -ms-overflow-style: none; /* IE 10+ */
   overflow-y: scroll; /* força scroll sem mostrar a barra */
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -6,6 +6,8 @@ main {
     text-align: center;
     width: 100vw;
     height: 90vh;
+    background: #0A0A0A;
+    background: linear-gradient(360deg,rgba(10, 10, 10, 1) 0%, rgba(0, 0, 0, 1) 100%);
 
     section {
         width: 65vw;
@@ -38,6 +40,7 @@ main {
 
                 span {
                     color:aqua;
+                    text-shadow:1px 1px 10px aqua;
                 }
             }
 
@@ -54,12 +57,12 @@ main {
             padding: 12px 14px;
             color: rgb(0, 0, 0);
             cursor: pointer;
-            font-size: 20px;
+            font-size: 16px;
             box-shadow: 0 0 4px rgba(0, 247, 255, 0.8);
             transition: 0.2s ease;
             }
 
-/* Darker background on mouse-over */
+
             .btn:hover {
                 box-shadow: 0 0 24px rgba(0, 247, 255, 0.8);
                 transition: 0.1s ease-in-out;

@@ -1,0 +1,41 @@
+#skills {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#skills h1 {
+  color: #00eaff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.skills-table th {
+  color: #9ca3af;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.skills-table td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.skills-table td img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
