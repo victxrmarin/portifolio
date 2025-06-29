@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./stylesheet/main.css">
   <link rel="stylesheet" href="./stylesheet/timeline.css">
   <link rel="stylesheet" href="./stylesheet/skills.css">
+  <link rel="stylesheet" href="./stylesheet/projects.css">
   <link rel="stylesheet" href="/stylesheet/footer.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -27,9 +28,9 @@
     <div id="scrollProgressBar"></div>
   <header>
     <aside id="icons">
-        <img width="48" height="48" src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new">
-        <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin">
-        <img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/>
+        <a href="mailto:victormarin.dev@gmail.com"><img width="48" height="48" src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new"></a>
+        <a href="https://br.linkedin.com/in/victxrmarin"></a><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/victxrmarin"><img width="48" height="48" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/></a>
     </aside>
     <canvas id="snowCanvas"></canvas>
     <div id="container">
@@ -42,7 +43,7 @@
   <main>
     <section id="aboutMe">
         <div id="aboutMeImg">
-            <img src="./image/me.jpg" alt="Me">
+            <img class="photo-slide" src="./image/me.jpg" alt="Me">
         </div>
         <div id="aboutMeText">
             <h1>I'm <span>Victor Marin</span>, an aspiring developer dedicated to making my mark in the job market.</h1>
@@ -140,6 +141,42 @@
       <td></td>
     </tr>
   </table>
+</section>
+<section id="projects">
+  <h1 class="projects-title">Projects</h1>
+  <p class="projects-subtitle">Some of the things I've built.</p>
+  <div class="projects-container">
+    <div class="project-card">
+      <img class="project-image" src="./image/discord.png" alt="GitHub Readme Generator">
+      <div class="project-info">
+        <h2>Discord bot</h2>
+        <p>Bot activated by slash commands integrated into the Discord App. Fully customizable to meet your needs.</p>
+        <div class="project-tags">
+          <span>Javascript</span>
+          <span>Discord.js</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" class="btn github">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <img class="project-image" src="./image/portfolio.png" alt="Boost AI">
+      <div class="project-info">
+        <h2>Portfolio page</h2>
+        <p>Responsive landing page using basic promming languages about who I am and my work.</p>
+        <div class="project-tags">
+          <span>Html</span>
+          <span>Sass</span>
+          <span>Javascript</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" class="btn github">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 </body>
 </main>

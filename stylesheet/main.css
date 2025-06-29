@@ -8,7 +8,7 @@ main {
   width: 100vw;
   height: fit-content;
   background: #0A0A0A;
-  background: linear-gradient(360deg, rgb(2, 2, 2) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(360deg, rgb(5, 5, 5) 0%, rgb(0, 0, 0) 100%);
 }
 main section {
   width: 65vw;
@@ -63,3 +63,16 @@ main section #aboutMeText .btn:hover {
   box-shadow: 0 0 24px rgba(0, 247, 255, 0.8);
   transition: 0.1s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
+
+.photo-slide {
+  opacity: 0;
+  transform: translateX(-80px); /* pode usar +80px para vir da direita */
+  transition: all 5s ease-out;
+  pointer-events: none;
+}
+
+.photo-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
