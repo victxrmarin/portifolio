@@ -87,3 +87,29 @@
   margin-right: 40px;
   text-align: left;
 }
+
+@media (max-width: 1500px) {
+  .timeline::before {
+    left: 5.7px;
+    transform: none;
+  }
+
+  .timeline-entry {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .timeline-entry::before {
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .timeline-content {
+    width: 100%;
+    margin: 20px 0 0 0 !important;
+    text-align: left;
+  }
+}

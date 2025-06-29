@@ -3,7 +3,6 @@
   max-width: 1000px;
   margin: auto;
   color: white;
-  text-align: center;
 }
 
 #skills h1 {
@@ -38,4 +37,49 @@
   height: 24px;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .skills-table {
+    font-size: 0.95rem;
+  }
+
+  .skills-table td img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  .skills-table thead {
+    display: none;
+  }
+
+  .skills-table tr {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.1);
+  }
+
+  .skills-table td {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    padding: 4px 0;
+  }
+
+  .skills-table td img {
+    width: 20px;
+    height: 20px;
+  }
 }

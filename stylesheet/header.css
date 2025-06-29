@@ -95,4 +95,94 @@ main, footer {
   50% {
     transform: translateX(-50%) translateY(10px);
   }
-}/*# sourceMappingURL=header.css.map */
+}
+
+@media (max-width: 1024px) {
+  #container #headerTitle {
+    font-size: 52px;
+  }
+
+  #container #headerTitle span {
+    font-size: 60px;
+  }
+
+  #container #headerSubtitle {
+    font-size: 18px;
+  }
+
+  #container #headerButton {
+    width: 130px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #icons {
+    left: 10px;
+  }
+
+  #icons img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  #container #headerTitle {
+    font-size: 38px;
+  }
+
+  #container #headerTitle span {
+    font-size: 44px;
+  }
+
+  #container #headerSubtitle {
+    font-size: 16px;
+  }
+
+  #container #headerButton {
+    width: 120px;
+    height: 42px;
+    font-size: 13px;
+  }
+
+  #icons {
+    position: absolute;
+    top: 20px;
+    flex-direction: row;
+    gap: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #icons img:hover {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container #headerTitle {
+    font-size: 28px;
+  }
+
+  #container #headerTitle span {
+    font-size: 34px;
+  }
+
+  #container #headerSubtitle {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  #container #headerButton {
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .scroll-down-arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #00f7ff;
+  }
+}

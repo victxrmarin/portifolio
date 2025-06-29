@@ -1,18 +1,39 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #000; /* ou a cor de fundo do seu site */
+  gap: 8px;
+  text-align: center;
+}
+
 footer h1 {
-    padding: 16px;
-    color: white;
-    text-align: center;
+  padding: 16px;
+  color: white;
+  font-size: 1.8rem;
 }
 
 footer p {
-    color:grey;
-    padding-top: 16px;
-    text-align: center;
+  color: grey;
+  padding-top: 16px;
+  font-size: 1rem;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+/* Responsivo para telas menores que 600px */
+@media (max-width: 600px) {
+  footer h1 {
+    font-size: 1.4rem;
+    padding: 12px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    padding-top: 12px;
+  }
+
+  footer {
+    padding: 16px 10px;
+  }
 }

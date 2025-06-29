@@ -46,6 +46,7 @@ main section #aboutMeText h1 span {
 main section #aboutMeText p {
   width: 70%;
   font-weight: 200;
+  text-align: justify;
   margin: 16px;
 }
 main section #aboutMeText .btn {
@@ -75,4 +76,64 @@ main section #aboutMeText .btn:hover {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
+}
+
+@media (max-width: 1500px) {
+  main section {
+    flex-direction: column; 
+    align-items: center;
+    width: 90%;
+    gap: 24px;
+  }
+
+  main section #aboutMeImg img {
+    width: 240px;
+    height: 240px;
+  }
+
+  main section #aboutMeText h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  main section #aboutMeText p {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  main section #aboutMeText .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  main section {
+    width: 95%;
+    gap: 16px;
+  }
+
+  main section #aboutMeImg img {
+    width: 160px;
+    height: 160px;
+    margin-top: 12px;
+  }
+
+  main section #aboutMeText h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  main section #aboutMeText p {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0 6px;
+  }
+
+  main section #aboutMeText .btn {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
 }

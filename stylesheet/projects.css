@@ -95,3 +95,76 @@
   background-color: #1c1c1c;
   color: white;
 }
+
+@media (max-width: 1024px) {
+  #projects {
+    width: 90vw;
+  }
+
+  .projects-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-info {
+    padding: 16px;
+  }
+
+  .project-tags span {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .project-buttons .btn {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 1.6rem;
+  }
+
+  .projects-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-buttons .btn {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
