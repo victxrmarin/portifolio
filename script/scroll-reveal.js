@@ -11,6 +11,7 @@
         el.classList.add('active');
       } else {
         el.classList.remove('active');
+
       }
     });
   }
