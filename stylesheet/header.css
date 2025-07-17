@@ -76,7 +76,7 @@ main, footer {
 
 .scroll-down-arrow {
   position: absolute;
-  bottom: 370px;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
