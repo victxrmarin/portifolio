@@ -27,3 +27,5 @@ portifolio/
 ├── stylesheet/            
 ├── index.html    
 └── README.md       
+```
+[See project](https://victxrmarin.github.io/portifolio)
